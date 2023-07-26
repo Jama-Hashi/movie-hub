@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex gap-20 m-10 p-5 border-t-2 border-gray-700">
+    <div className="flex gap-20 mx-10 mt-40 p-5 border-t-2 border-gray-700">
       <p>©All rights reserved.</p>
       <div>
         <p className="pb-3 ">Social Media:</p>
