@@ -23,6 +23,25 @@ const Movie = async ({ params: { id } }) => {
             {result.title || result.original_name}
           </h2>
           <p>{result.overview}</p>
+          <div className="hidden sm:block mt-5">
+            <p>
+              <strong className="text-fuchsia-700">Release Date: </strong>
+              {result.release_date}
+            </p>
+            <p>
+              <strong className="text-fuchsia-700">Original Title: </strong>
+              {result.original_title}
+            </p>
+            <p>
+              <strong className="text-fuchsia-700">Popularity: </strong>
+              {result.popularity}
+            </p>
+
+            <p>
+              <strong className="text-fuchsia-700">Votes: </strong>
+              {result.vote_count}
+            </p>
+          </div>
         </div>
         <div className="my-4 rounded-md overflow-hidden">
           <Image
@@ -36,7 +55,7 @@ const Movie = async ({ params: { id } }) => {
           />
         </div>
       </div>
-      <div className=" xl:-mt-20">
+      <div className="sm:hidden">
         <p>
           <strong className="text-fuchsia-700">Release Date: </strong>
           {result.release_date}
